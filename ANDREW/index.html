@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Comparison</title>
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .box {
+            background-color: #ff6a07;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #f0ec0b;
+        
+
+            width: 150px; 
+            height: 50px; 
+        }
+
+        .inline-demo
+         {
+            display: inline;
+        }
+
+
+        .block-demo {
+            display: block;
+        }
+
+
+        .inline-block-demo {
+            display: inline-block;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+
+        code {
+            background-color: #b61717;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>CSS Display Properties Visualizer</h1>
+    <p>Every colored box below has a CSS width of 150px and height of 50px applied to it. Watch how the display modes handle it.</p>
+
+    
+    <section>
+        <h2>1. Display: Inline</h2>
+        <p>Elements stay on the same line. <strong>Notice that the 150x50px width and height settings are completely ignored.</strong></p>
+        
+        <div class="box inline-demo">Box 1 (Inline)</div>
+        <div class="box inline-demo">Box 2 (Inline)</div>
+        <div class="box inline-demo">Box 3 (Inline)</div>
+    </section>
+
+   
+    <section>
+        <h2>2. Display: Block</h2>
+        <p>Elements break to a new line and completely respect the <strong>150px width and 50px height</strong> boundaries.</p>
+        
+        <div class="box block-demo">Box 1 (Block)</div>
+        <div class="box block-demo">Box 2 (Block)</div>
+        <div class="box block-demo">Box 3 (Block)</div>
+    </section>
+
+    <section>
+        <h2>3. Display: Inline-Block</h2>
+        <p>The perfect hybrid. Elements stay sitting on the same line next to each other, but <strong>safely respect the 150x50px dimensions</strong>.</p>
+        
+        <div class="box inline-block-demo">Box 1 (Inline-Block)</div>
+        <div class="box inline-block-demo">Box 2 (Inline-Block)</div>
+        <div class="box inline-block-demo">Box 3 (Inline-Block)</div>
+    </section>
+
+</body>
+</html>
